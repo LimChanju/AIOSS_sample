@@ -1,10 +1,16 @@
-# TDD 사이클 메모 (minimal)
+# TDD 사이클 메모
 
-## RED
-- TODO: 먼저 실패하는 테스트를 작성합니다.
+## RED — 실패하는 테스트 작성
+- `tests/test_calculator.py`에 `test_add_positive_numbers`, `test_subtract_positive_numbers` 작성
+- `app/calculator.py`는 `NotImplementedError` 상태 유지
+- `pytest` 실행 → 2개 FAILED 확인
+- 커밋: `test: add failing tests for calculator (RED)`
 
-## GREEN
-- TODO: 테스트를 통과시키는 최소 구현을 작성합니다.
+## GREEN — 테스트 통과하는 최소 구현
+- `app/calculator.py`에 `add()`, `subtract()` 구현
+- `pytest` 실행 → 2개 PASSED 확인
+- 커밋: `feat: implement add and subtract functions (GREEN)`
 
-## REFACTOR
-- TODO: 테스트가 유지되는 범위에서 코드를 정리합니다.
+## REFACTOR — 코드 정리 (필요 시)
+- 현재 구현이 단순하여 리팩토링 불필요
+- 테스트는 그대로 통과 유지 확인
