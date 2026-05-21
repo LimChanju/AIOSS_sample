@@ -1,16 +1,17 @@
 # 샘플 1 PR 템플릿 (minimal)
 
 ## 변경 사항
-- TODO: 어떤 파일을 수정했는지 작성
-- TODO: 어떤 기능을 추가했는지 작성
+- `app/greeting.py` 파일 수정
+- `get_greeting(name)` 함수 구현
+- 이름이 비어있으면 "Hello, Guest!", 아니면 "Hello, {name}!" 반환
 
 ## 테스트
-- TODO: 로컬에서 어떤 방식으로 확인했는지 작성
+- 로컬에서 함수 직접 호출로 확인: `get_greeting("student")` → `"Hello, student!"` ✓
 
 ## 롤백 계획
-- TODO: 문제 발생 시 되돌리는 방법 작성
+- 문제 발생 시 이전 커밋으로 git revert
 
 ## 체크리스트
-- [ ] TODO: 코드 동작 확인
-- [ ] TODO: 자체 리뷰 완료
-- [ ] TODO: 문서 또는 설명 보강
+- [x] 코드 동작 확인
+- [x] 자체 리뷰 완료
+- [x] 문서 또는 설명 보강
